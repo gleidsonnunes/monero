@@ -48,7 +48,9 @@
 #include <string>
 #include <boost/type_traits/is_integral.hpp>
 #include <boost/type_traits/integral_constant.hpp>
-
+#ifndef EOF
+#define EOF (-1)
+#endif
 /*! \struct is_blob_type 
  *
  * \brief a descriptor for dispatching serialize
